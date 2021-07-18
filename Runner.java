@@ -9,6 +9,15 @@ public class Runner {
 		queue.enqueue(70);
 		System.out.println("Front= " +queue.front.data);
 		System.out.println("Rear= " +queue.rear.data);
+		queue.dequeue();
+		System.out.println("After first dequeue");
+		System.out.println("Front= " +queue.front.data);
+		System.out.println("Rear= " +queue.rear.data);
+		queue.dequeue();
+		System.out.println("After second dequeue");
+		System.out.println("Front= " +queue.front.data);
+		System.out.println("Rear= " +queue.rear.data);
+		queue.dequeue();
 	}
 
 }

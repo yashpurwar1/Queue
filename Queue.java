@@ -24,5 +24,18 @@ public class Queue {
         this.rear.next = temp;
         this.rear = temp;
     }
-
+	
+	public void dequeue()
+    {
+        if (this.front == null)
+            return;
+  
+        // Store previous front and move front one node ahead
+        this.front = this.front.next;
+  
+        // If front becomes NULL, then change rear also as NULL
+        if (this.front == null)
+            this.rear = null;
+    }
 }
+
